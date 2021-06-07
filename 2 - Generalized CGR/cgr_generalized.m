@@ -9,16 +9,10 @@ function cgr_generalized(N, v, r, filename)
 % filename: optional argument, filename that you want to save image as
 % ---------------------------------------
     
-    % calculate location of shape's vertices    
-    degrees = linspace(0, 2*pi, 361);
-    c = cos(degrees);
-    s = sin(degrees);
-    shape = zeros(v,2);
-    shape_step = 360/v;
-    for i = 1:shape_step:360
-        shape(round(i/shape_step + 1, 0), 1) = s(round(i));
-        shape(round(i/shape_step + 1, 0), 2) = c(round(i));
-    end
+    % calculate location of shape's vertices
+    x = sin(2*pi*((0:v)/v))';
+    y = cos(2*pi*((0:v)/v))';
+    shape = [x, y];
     
     % create random sequence to choose vertex for each iteration
     seq = randi([1, v], 1, N);
