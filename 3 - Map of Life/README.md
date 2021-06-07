@@ -12,6 +12,5 @@ This is the order in which the scripts should be run to replicate results
 * `dissimilarity_matrix.m`: Creates the structural dissimilarity index measure matrix
 * `multidimensional_scaling.m`: Calculates the classical multidimensional scaling and plots the results according to the class of each species
 
-## Additional Data Files
-* `dsim.mat`: Results from calculating the structural dissimilarity index measure matrix
-* `MDM.mat`: Results from calculating the classical multidimensional scaling
+## Additional Notes
+Due to the size of the results (CGR images and .MAT files), the files have not been included in this repository. However, the code provided should allow you to reproduce the results.
