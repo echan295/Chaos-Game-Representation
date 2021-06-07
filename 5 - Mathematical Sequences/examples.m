@@ -1,6 +1,6 @@
 %% Examples with digits of pi
 % Create vector of digits of pi
-n = 10000;
+n = 50000;
 S = creatingPiArray(n);
 
 % Plot CGR of digits of pi using a 10-gon
