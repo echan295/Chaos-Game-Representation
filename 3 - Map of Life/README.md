@@ -1,10 +1,11 @@
 # Map of Life
+This folder gives you all the code to reproduce the map of life (Figure 14 from the paper).
 
 ## Functions
-* `parsedna()`: Pases fasta file and returns a string which is the DNA sequence
-* `cgr()`: Returns a (n + 1) by 2 matrix that contains the coordinates of each CGR point
-* `processdata()`: Creates image from results from `cgr()`
-* `main()`: Function that calls previous functions in the order they are supposed to be executed
+* `parsedna(filename)`: Pases fasta file and returns a string which is the DNA sequence
+* `cgr(dna)`: Returns a (n + 1) by 2 matrix that contains the coordinates of each CGR point
+* `processdata(data)`: Creates image from results from `cgr()`
+* `main(filename, writeto)`: Function that calls previous functions in the order they are supposed to be executed
 
 ## Scripts
 This is the order in which the scripts should be run to replicate results
