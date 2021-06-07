@@ -1,6 +1,7 @@
 function S = readseq(filename)
 % ------------------------------------------
-% Create a vector of integers mapping amino acide to an integer (from 1 to 20)
+% Maps amino acid to corresponding integer. Outputs vector of integers that
+% corresponds to the polypeptide
 % 
 % filename: fasta file with amino acid sequence
 % ------------------------------------------
