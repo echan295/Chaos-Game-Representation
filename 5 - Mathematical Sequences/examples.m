@@ -10,11 +10,11 @@ CGR_10sides(S);
 CGR_4sides(mod(S, 4), 0:3);
 
 %% Examples using Fibonacci sequence
-n = 3000;
+n = 1000; % Note after Matlab update, can only go up to max n = 1477 for Fibonacci function (anything greater will give you Inf)
 
 % % Incorrect way (due to floating point): Getting Fibonacci sequence then taking the modulo
-% F = Fibonacci(n);
-% CGR_10sides(mod(F, 10));
+F = Fibonacci(n);
+CGR_10sides(mod(F, 10));
 
 % Correct way: Getting the modulo of the Fibonacci while creating the
 % sequence
@@ -33,8 +33,8 @@ CGR_10sides(mod(S, 10));
 % Prime numbers between 7 and 1000000 mod 10; vertices are 1, 3, 7, 9
 CGR_4sides(mod(S(4:end), 10), [1, 3, 7, 9])
 
-% 103 + kth prime number mod 4 (note that the figure produced here is flipped due to how we labeled the vertices)
-CGR_4sides(mod(103 + S, 4), 0:3)
-
 % Prime numbers between 7 and 1000000 mod 8; vertices are 1, 3, 5, 7
 CGR_4sides(mod(S(4:end), 8), [1, 3, 5, 7])
+
+% 103 + kth prime number mod 4
+CGR_4sides(mod(S(104:end), 4), 0:3)
