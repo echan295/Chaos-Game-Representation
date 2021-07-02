@@ -12,7 +12,11 @@ CGR_4sides(mod(S, 4), 0:3);
 %% Examples using Fibonacci sequence
 n = 1000; % Note after Matlab update, can only go up to max n = 1477 for Fibonacci function (anything greater will give you Inf)
 
-% % Incorrect way (due to floating point): Getting Fibonacci sequence then taking the modulo
+% Using Matlab's built-in Fibonacci function (for MATLAB 2021a+)
+F = fibonacci(1:n);
+CGR_10sides(mod(F, 10));
+
+% Incorrect way (due to floating point): Getting Fibonacci sequence then taking the modulo
 F = Fibonacci(n);
 CGR_10sides(mod(F, 10));
 
